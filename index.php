@@ -99,7 +99,7 @@ if (!empty($_POST["btn_submit_now"])) {
     <div class="container">
         <h1>艦これRPG戦果集計ツール</h1>
         <br>
-        <textarea id="outcome" readonly><?php echo "獲得した資材:" . $_SESSION["燃料"] . "/" . $_SESSION["弾薬"] . "/" . $_SESSION["鋼材"] . "/" . $_SESSION["ボーキ"] . " 任意:" . implode(",", $_SESSION["任意"]) . " 家具コイン:" . $_SESSION["コイン"]  .
+        <textarea id="outcome" readonly><?php echo "獲得した資材:" . $_SESSION["燃料"] . "/" . $_SESSION["弾薬"] . "/" . $_SESSION["鋼材"] . "/" . $_SESSION["ボーキ"] . " 任意:" . implode(",", $_SESSION["任意"]) . " 感情:" . $_SESSION["感情"] . " 家具コイン:" . $_SESSION["コイン"]  .
                                             "\n現在資材:" . (int) ($_SESSION["燃料"] +  $_SESSION["現在燃料"]) . "/" . (int) ($_SESSION["弾薬"] +  $_SESSION["現在弾薬"]) . "/" . (int) ($_SESSION["鋼材"] + $_SESSION["現在鋼材"]) . "/" . (int) ($_SESSION["ボーキ"] + $_SESSION["現在ボーキ"]) . " コイン:" . (int) ($_SESSION["コイン"] + $_SESSION["現在コイン"]) .
                                             "\nアイテム:" . $_SESSION["アイテム"] .
                                             "\n出た装備:" . implode(",", $_SESSION["装備"]) ?></textarea>
