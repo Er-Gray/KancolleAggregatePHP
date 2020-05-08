@@ -1,0 +1,96 @@
+body{
+    background-image:url("./background.png");
+    background-size: cover;
+}
+
+p{
+    color:white;
+}
+
+.container{
+    text-align: center;
+    
+}
+
+h1{
+    border:2px solid #ccc;
+    background-color: rgba(240,248,255,0.4);
+    display:inline-block;
+    border-radius: 20px;
+}
+
+textarea{
+    width:40%;
+    height:200px;
+    font-size:20px;
+    background-color: rgba(88,182,210,0.5);
+    border-radius: 20px;
+}
+
+.btn_submit,.btn{
+    margin-right:25px;
+    border-radius:10px;
+    opacity:0.6;
+    color:white;
+    margin-bottom: 30px;
+}
+
+.btn_submit:hover,.btn:hover{
+    opacity:1;
+}
+
+.normal_outcome{
+    background-color:#7aa3da;
+}
+
+.special_outcome{
+    background-color: #00a474;
+}
+
+.now_resource{
+    background-color: #dda0dd;
+}
+
+.distribution{
+    background-color: #efa92a;
+}
+
+.copy{
+    background-color: #3366cc;
+}
+
+.reset{
+    background-color: #c6001c;
+}
+
+select{
+    background-color: rgba(88,182,210,0.5);
+    border-radius: 5px;
+}
+
+.submit{
+    background-color: #3366cc;
+}
+
+.input-num{
+    border:1px solid #bbb;
+    border-radius: 5px;
+    width:50px;
+}
+
+.development-text{
+    border:1px solid #bbb;
+    border-radius: 5px;
+}
+
+
+.input-now{
+    list-style:none;
+    text-align:center;
+}
+
+li{
+    display:inline-block;
+    margin-right:10px;
+    
+}
