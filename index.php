@@ -43,16 +43,28 @@ if (!empty($_POST["btn_submit"])) {
                 $_SESSION["感情"] += (int) $_POST["resource_value"];
                 break;
             case "すべての資材":
-                $_SESSION["燃料"] += 3;
-                $_SESSION["弾薬"] += 3;
-                $_SESSION["鋼材"] += 3;
-                $_SESSION["ボーキ"] += 3;
+                if ($_POST["development"] == "") {
+                    $_SESSION["燃料"] += 3;
+                    $_SESSION["弾薬"] += 3;
+                    $_SESSION["鋼材"] += 3;
+                    $_SESSION["ボーキ"] += 3;
+                } else {
+                    echo "開発表以外のときは何も入力しないでください";
+                }
                 break;
             case "アイテム":
-                $_SESSION["アイテム"]++;
+                if ($_POST["development"] == "") {
+                    $_SESSION["アイテム"]++;
+                } else {
+                    echo "開発表以外のときは何も入力しないでください";
+                }
                 break;
             case "コイン":
-                $_SESSION["コイン"]++;
+                if ($_POST["development"] == "") {
+                    $_SESSION["コイン"]++;
+                } else {
+                    echo "開発表以外のときは何も入力しないでください";
+                }
                 break;
             case "開発":
                 $_SESSION["装備"][] = $_POST["development"];
